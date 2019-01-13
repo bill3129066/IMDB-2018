@@ -5,10 +5,15 @@
         <router-link to="/">
           <span class="nav-title">新世代大學索引</span>
         </router-link>
-          <div class="input-field col s6 s12 red-text">
-            <i class="red-text material-icons prefix">search</i>
-            <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete red-text">
-          </div>
+        <div class="input-field col s6 s12 red-text">
+          <i class="red-text material-icons prefix">search</i>
+          <input
+            type="text"
+            placeholder="search"
+            id="autocomplete-input"
+            class="autocomplete red-text"
+          >
+        </div>
         <!-- add button -->
         <!-- <a href class="btn-floating btn-large halfway-fab pink">
           <router-link to>
@@ -19,13 +24,15 @@
     </nav>
     <ul id="tabs" class="tabs z-depth-2">
       <li class="tab col s3">
-        <a class="active" href="#university">查看大學</a>
+        <router-link to="/university">
+          <a class="active">查看大學</a>
+        </router-link>
       </li>
       <li class="tab col s3">
-        <a href="#department">查看科系</a>
+        <router-link to="/department">查看科系</router-link>
       </li>
       <li class="tab col s3">
-        <a href="#dept-of-uni">查看大學科系</a>
+        <router-link to="/dept-of-uni">查看大學科系</router-link>
       </li>
     </ul>
   </div>
