@@ -2,7 +2,7 @@
   <div class="navbar">
     <nav class="nav-extended indigo darken-2 z-depth-3">
       <div class="nav-content">
-        <router-link to>
+        <router-link to="/">
           <span class="nav-title">Database</span>
         </router-link>
         <!-- <a href class="btn-floating btn-large halfway-fab pink">
