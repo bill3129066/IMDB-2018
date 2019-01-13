@@ -6,7 +6,7 @@
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="D_ID" required>
-            <label class="active">科系ID(Slug)</label>
+            <label class="active">科系ID# (Slug)</label>
           </div>
         </div>
         <div class="row">
@@ -57,6 +57,7 @@ export default {
         })
         .then(docRef => this.$router.push("/department"))
         .catch(error => console.log(err));
+		alert("資料創建成功！")
     }
   }
 }

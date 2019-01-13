@@ -10,13 +10,13 @@
 	  <li class="collection-item">大學科系創始年份: {{Start_Date}}</li>
 	</ul>
 	<router-link to="/dept_of_uni" class="btn grey">Back</router-link>
-	<!-- <button @click="deleteUniversity()" class="btn red">Delete</button>
+	<button @click="deleteDU()" class="btn red">Delete</button>
 	
 	<div class="fixed-action-btn">
-	  <router-link v-bind:to="{name: 'university_edit', params: {U_ID: U_ID}}" class="btn-floating btn-large red">
+	  <router-link v-bind:to="{name: 'dept_of_uni_edit', params: {DU_Name: DU_Name}}" class="btn-floating btn-large red">
 	    <i class="material-icons">create</i>
 	  </router-link>
-	</div> -->
+	</div>
   </div>
 </template>
 
@@ -54,7 +54,7 @@ export default {
   watch: {
     '$route': 'fetchData'
   },
-  method: {
+  methods: {
     fetchData (){
 	  db.collection('Dept_of_Uni').where('DU_Name', '==', this.$route.params.DU_Name).get()
 		.then(snapshot => {
@@ -68,6 +68,18 @@ export default {
 			this.Start_Date = doc.data().Start_Date
 		  })
 	    })
+	},
+	deleteDU (){
+	  if (confirm('您確定要刪除此筆資料嗎？')){
+	    db.collection('Dept_of_Uni').where('DU_Name', '==', this.$route.params.DU_Name).get()
+		.then(snapshot => {
+		  snapshot.forEach(doc => {
+		    doc.ref.delete()
+			alert("資料已刪除！")
+			this.$router.push('/dept_of_uni')
+		  })
+	    })
+	  }
 	}
   }
 }

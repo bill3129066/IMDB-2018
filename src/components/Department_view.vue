@@ -7,6 +7,13 @@
 	  <li class="collection-item">科系簡介: {{D_Abstract}}</li>
 	</ul>
 	<router-link to="/Department" class="btn grey">Back</router-link>
+	<button @click="deleteDepartment()" class="btn red">Delete</button>
+	
+	<div class="fixed-action-btn">
+	  <router-link v-bind:to="{name: 'department_edit', params: {D_ID: D_ID}}" class="btn-floating btn-large red">
+	    <i class="material-icons">create</i>
+	  </router-link>
+	</div>
   </div>
 </template>
 
@@ -38,7 +45,7 @@ export default {
   watch: {
     '$route': 'fetchData'
   },
-  method: {
+  methods: {
     fetchData (){
 	  db.collection('Department').where('D_ID', '==', this.$route.params.D_ID).get()
 		.then(snapshot => {
@@ -49,6 +56,18 @@ export default {
 			this.D_Abstract = doc.data().D_Abstract
 		  })
 	    })
+	},
+	deleteDepartment (){
+	  if (confirm('您確定要刪除此筆資料嗎？')){
+	    db.collection('Department').where('D_ID', '==', this.$route.params.D_ID).get()
+		.then(snapshot => {
+		  snapshot.forEach(doc => {
+		    doc.ref.delete()
+			alert("資料已刪除！")
+			this.$router.push('/department')
+		  })
+	    })
+	  }
 	}
   }
 }
