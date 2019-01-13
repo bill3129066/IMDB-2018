@@ -2,12 +2,12 @@
   <div id="dept_of_uni_view">
     <ul class="colloction with-header">
 	  <li class="collection-header"><h4>{{DU_Name}}</h4></li>
-	  <li class="collection-item">University ID#: {{U_ID}}</li>
-	  <li class="collection-item">Department ID#: {{D_ID}}</li>
-	  <li class="collection-item">Score of GSAT: {{Score_GSAT}}</li>
-	  <li class="collection-item">Score of JCEE: {{Score_JCEE}}</li>
-	  <li class="collection-item">Feature: {{Feature}}</li>
-	  <li class="collection-item">Start Date: {{Start_Date}}</li>
+	  <li class="collection-item">大學ID#: {{U_ID}}</li>
+	  <li class="collection-item">科系ID#: {{D_ID}}</li>
+	  <li class="collection-item">學測分數: {{Score_GSAT}}</li>
+	  <li class="collection-item">指考分數: {{Score_JCEE}}</li>
+	  <li class="collection-item">大學科系特色: {{Feature}}</li>
+	  <li class="collection-item">大學科系創始年份: {{Start_Date}}</li>
 	</ul>
 	<router-link to="/dept_of_uni" class="btn grey">Back</router-link>
 	<!-- <button @click="deleteUniversity()" class="btn red">Delete</button>

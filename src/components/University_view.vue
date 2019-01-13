@@ -2,12 +2,12 @@
   <div id="university_view">
     <ul class="colloction with-header">
 	  <li class="collection-header"><h4>{{U_Name}}</h4></li>
-	  <li class="collection-item">University ID#: {{U_ID}}</li>
-	  <li class="collection-item">University Abstract: {{U_Abstract}}</li>
-	  <li class="collection-item">University Tuition: ${{Tuition}}</li>
-	  <li class="collection-item">Fee of University's Dorm: ${{Dorm_Fee}}</li>
-	  <li class="collection-item">Fee of Renting around University: ${{Rent_Fee}}</li>
-	  <li class="collection-item">University Location: {{Location}}</li>
+	  <li class="collection-item">大學ID#: {{U_ID}}</li>
+	  <li class="collection-item">大學簡介: {{U_Abstract}}</li>
+	  <li class="collection-item">大學學費: ${{Tuition}}</li>
+	  <li class="collection-item">大學宿舍費: ${{Dorm_Fee}}</li>
+	  <li class="collection-item">大學附近租金: ${{Rent_Fee}}</li>
+	  <li class="collection-item">大學地點: {{Location}}</li>
 	</ul>
 	<router-link to="/university" class="btn grey">Back</router-link>
 	<button @click="deleteUniversity()" class="btn red">Delete</button>

@@ -2,9 +2,9 @@
   <div id="department_view">
     <ul class="colloction with-header">
 	  <li class="collection-header"><h4>{{D_Name}}</h4></li>
-	  <li class="collection-item">Department ID#: {{D_ID}}</li>
-	  <li class="collection-item">Department Type: {{Type}}</li>
-	  <li class="collection-item">Department Abstract: {{D_Abstract}}</li>
+	  <li class="collection-item">科系ID# (Slug): {{D_ID}}</li>
+	  <li class="collection-item">科系種類: {{Type}}</li>
+	  <li class="collection-item">科系簡介: {{D_Abstract}}</li>
 	</ul>
 	<router-link to="/Department" class="btn grey">Back</router-link>
   </div>

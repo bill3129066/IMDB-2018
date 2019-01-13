@@ -6,25 +6,25 @@
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="D_ID" required>
-            <label class="active">Department ID#</label>
+            <label class="active">科系ID(Slug)</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="D_Name" required>
-            <label class="active">Department Name</label>
+            <label class="active">科系名稱</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="D_Abstract" required>
-            <label class="active">Department Abstract</label>
+            <label class="active">科系簡介</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Type" required>
-            <label class="active">Department Type</label>
+            <label class="active">科系種類</label>
           </div>
         </div>
         <!-- <button type="submit" class="btn">Submit</button> -->

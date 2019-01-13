@@ -6,43 +6,43 @@
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="U_ID" required>
-            <label class="active">University ID#</label>
+            <label class="active">大學ID#</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="D_ID" required>
-            <label class="active">Department ID#</label>
+            <label class="active">科系ID#</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="DU_Name" required>
-            <label class="active">Dept_of_Uni Name</label>
+            <label class="active">大學科系名稱</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Score_GSAT" required>
-            <label class="active">Dept_of_Uni Score_GSAT</label>
+            <label class="active">大學科系學測分數</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Score_JCEE" required>
-            <label class="active">Dept_of_Uni Score_JCEE</label>
+            <label class="active">大學科系指考分數</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Feature" required>
-            <label class="active">Dept_of_Uni Feature</label>
+            <label class="active">大學科系的特色</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Start_Date" required>
-            <label class="active">Dept_of_Uni Start Date</label>
+            <label class="active">大學科系的創始年份</label>
           </div>
         </div>
         <!-- <button type="submit" class="btn">Submit</button> -->
