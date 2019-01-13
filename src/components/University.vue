@@ -1,7 +1,7 @@
 <template>
 
   <div id="university">
-    <h3>University</h3>
+    <h3>大學</h3>
 	
 	<div class="index container">
       <div class="card" v-for="university in universities" :key="university.id">

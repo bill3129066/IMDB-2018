@@ -1,6 +1,6 @@
 <template>
   <div id="university_new">
-    <h3>Create a new university</h3>
+    <h3>新增大學資料</h3>
 	<div class="row">
 	  <form @submit.prevent="saveUniversity" class="col s12">
 	    <div class="row">
