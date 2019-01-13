@@ -6,43 +6,43 @@
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="U_ID" required>
-            <label>University ID#</label>
+            <label class="active">University ID#</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="U_Name" required>
-            <label>University Name</label>
+            <label class="active">University Name</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="U_Abstract" required>
-            <label>University Abstract</label>
+            <label class="active">University Abstract</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Tuition" required>
-            <label>University Tuition</label>
+            <label class="active">University Tuition</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Dorm_Fee" required>
-            <label>Fee of University's Dorm</label>
+            <label class="active">Fee of University's Dorm</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Rent_Fee" required>
-            <label>Fee of Renting around University</label>
+            <label class="active">Fee of Renting around University</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Location" required>
-            <label>University Location</label>
+            <label class="active">University Location</label>
           </div>
         </div>
         <!-- <button type="submit" class="btn">Submit</button> -->
