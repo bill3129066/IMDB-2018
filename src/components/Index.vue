@@ -23,6 +23,12 @@
             <img class="div2" src="./assets/img2.jpg">
         </div>
 
+        <p>  </p>
+
+        <a href="https://github.com/bill3129066/IMDB-2018" class="btn btn-outline-secondary btn-lg github-link z-depth-3" target="_blank"
+            rel="noopener">Github</a>
+
+        <p>　</p>
     </div>
 </template>
 
@@ -31,20 +37,35 @@
 </script>
 
 <style>
-.photos{
-	display:flex;
-  
-}
-.div1{
-	width:50%;
-  height:250px;
-	flex:1;
-  padding: 5px;
-}
-.div2{
-	width:50%;
-	height:250px;
-	flex:1;
-  padding: 5px;
-}
+    .photos {
+        display: flex;
+    }
+
+    .div1 {
+        width: 50%;
+        height: 250px;
+        flex: 1;
+        padding: 5px;
+    }
+
+    .github-link {
+        width: 100%;
+        padding-block-end: 30px;
+        align-content: center;
+    }
+
+    .get-start {
+        align-items: center;
+    }
+
+    .div2 {
+        width: 50%;
+        height: 250px;
+        flex: 1;
+        padding: 5px;
+    }
+
+    h2 {
+        color: #303f9ec4;
+    }
 </style>
