@@ -33,7 +33,7 @@
         <router-link to="/department">查看科系</router-link>
       </li>
       <li class="tab col s3">
-        <router-link to="/dept-of-uni">查看大學科系</router-link>
+        <router-link to="/dept_of_uni">查看大學科系</router-link>
       </li>
     </ul>
   </div>
@@ -45,7 +45,8 @@
 export default {
   name: "Navbar",
   data() {
-    return {};
+    return {
+	};
   }
 };
 </script>
