@@ -68,11 +68,11 @@ export default {
   margin-top: 0px;
 }
 
-.index li {
+.index .ingredients li {
   display: inline-block;
 }
 
-.index {
+.index .delete {
   position: absolute;
   top: 4px;
   right: 4px;

@@ -4,6 +4,7 @@
     <div class="index container">
       <div class="card" v-for="university in universities" :key="university.id">
         <router-link
+
           v-bind:to="{name:'university_view', params:{U_ID: university.U_ID}}"
         >
           <div class="card-content">
@@ -71,4 +72,6 @@ export default {
 .index li {
   display: inline-block;
 }
+
+
 </style>
