@@ -10,32 +10,21 @@
             <i class="material-icons">add</i>
           </router-link>
         </a>-->
+        <a href class="halfway-fab indigo darken-2 nav-extended">
+          <ul id="tabs-swipe-demo" class="tabs">
+            <li class="tab col s3">
+              <a href="#university">查看大學</a>
+            </li>
+            <li class="tab col s3">
+              <a class="active" href="#department">查看科系</a>
+            </li>
+            <li class="tab col s3">
+              <a href="#dept-of-uni">查看大學科系</a>
+            </li>
+          </ul>
+        </a>
       </div>
     </nav>
-    <a href class="btn-large halfway-fab pink">
-      <div class="row">
-      <div class="col s12">
-        <ul class="tabs">
-          <li class="tab col s3">
-            <a href="#university">
-              <i class="material-icons">add</i>University
-            </a>
-          </li>
-          <li class="tab col s3">
-            <a class="active" href="#test2">
-              <i class="material-icons">add</i>Test 2
-            </a>
-          </li>
-          <li class="tab col s3">
-            <a href="#test3">
-              <i class="material-icons">add</i>Test 3
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </a>
-    
   </div>
 </template>
 
