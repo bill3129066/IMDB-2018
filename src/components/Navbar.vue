@@ -14,10 +14,10 @@
     </nav>
     <ul id="tabs" class="tabs z-depth-2">
       <li class="tab col s3">
-        <a href="#university">查看大學</a>
+        <a class="active" href="#university">查看大學</a>
       </li>
       <li class="tab col s3">
-        <a class="active" href="#department">查看科系</a>
+        <a href="#department">查看科系</a>
       </li>
       <li class="tab col s3">
         <a href="#dept-of-uni">查看大學科系</a>
@@ -42,17 +42,13 @@ export default {
   padding: 0 20px;
 }
 
-
 .tabs .tab a {
-  color: #F9F9F9!important;
+  color: #f9f9f9 !important;
 }
 .tabs {
-  text-align:right;
+  text-align: right;
   background-color: #303f9ec4;
 }
-
-
-
 </style>
 
 
