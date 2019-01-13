@@ -69,7 +69,7 @@ export default {
     };
   },
   beforeRouteEnter (to, from, next){
-    db.collection('Dept_of_Uni').where('UD_Name', '==', to.params.UD_Name).get()
+    db.collection('Dept_of_Uni').where('DU_Name', '==', to.params.DU_Name).get()
 	.then(snapshot => {
       snapshot.forEach(doc => {
         next(vu => {
@@ -89,7 +89,7 @@ export default {
   },
   methods: {
     fetchData (){
-	  db.collection('Dept_of_Uni').where('UD_Name', '==', this.$route.params.UD_Name).get()
+	  db.collection('Dept_of_Uni').where('DU_Name', '==', this.$route.params.DU_Name).get()
 		.then(snapshot => {
 		  snapshot.forEach(doc => {
 			this.U_ID = doc.data().U_ID,
@@ -103,7 +103,7 @@ export default {
 	    })
 	},
 	editDU() {
-		db.collection('Dept_of_Uni').where('UD_Name', '==', this.$route.params.UD_Name).get()
+		db.collection('Dept_of_Uni').where('DU_Name', '==', this.$route.params.DU_Name).get()
 		.then(snapshot => {
 		  snapshot.forEach(doc => {
 		    doc.ref.update({
@@ -117,7 +117,7 @@ export default {
 			})
 			.then(() => {
 			  alert("資料更改成功！")
-			  this.$router.push({name: 'dept_of_uni_view', params: {UD_Name: this.UD_Name}})
+			  this.$router.push({name: 'dept_of_uni_view', params: {DU_Name: this.DU_Name}})
 			})
 		  })
 	    })
