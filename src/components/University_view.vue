@@ -75,7 +75,7 @@ export default {
 		.then(snapshot => {
 		  snapshot.forEach(doc => {
 		    doc.ref.delete()
-			this.$route.push('/university')
+			this.$router.push('/university')
 		  })
 	    })
 	  }
