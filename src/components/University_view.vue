@@ -70,11 +70,12 @@ export default {
 	    })
 	},
 	deleteUniversity (){
-	  if (confirm('Are you sure?')){
+	  if (confirm('您確定要刪除此筆資料嗎？')){
 	    db.collection('University').where('U_ID', '==', this.$route.params.U_ID).get()
 		.then(snapshot => {
 		  snapshot.forEach(doc => {
 		    doc.ref.delete()
+			alert("資料已刪除！")
 			this.$router.push('/university')
 		  })
 	    })

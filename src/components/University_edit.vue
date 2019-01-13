@@ -6,43 +6,43 @@
         <div class="row">
           <div class="input-field col s12">
             <input disabled type="text" v-model="U_ID" required>
-            <label class="active">University ID#</label>
+            <label class="active">大學ID# (此為主要鍵，無法更改)</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="U_Name" required>
-            <label class="active">University Name</label>
+            <label class="active">大學名稱</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="U_Abstract" required>
-            <label class="active">University Abstract</label>
+            <label class="active">大學簡介</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Tuition" required>
-            <label class="active">University Tuition</label>
+            <label class="active">大學學費</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Dorm_Fee" required>
-            <label class="active">Fee of University's Dorm</label>
+            <label class="active">大學宿舍費</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Rent_Fee" required>
-            <label class="active">Fee of Renting around University</label>
+            <label class="active">大學附近租金</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" v-model="Location" required>
-            <label class="active">University Location</label>
+            <label class="active">大學位置</label>
           </div>
         </div>
         <!-- <button type="submit" class="btn">Submit</button> -->
@@ -116,6 +116,7 @@ export default {
               Location: this.Location
 			})
 			.then(() => {
+			  alert("更改資料成功！")
 			  this.$router.push({name: 'university_view', params: {U_ID: this.U_ID}})
 			})
 		  })
