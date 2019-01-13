@@ -116,7 +116,7 @@ export default {
               Location: this.Location
 			})
 			.then(() => {
-			  alert("更改資料成功！")
+			  alert("資料更改成功！")
 			  this.$router.push({name: 'university_view', params: {U_ID: this.U_ID}})
 			})
 		  })

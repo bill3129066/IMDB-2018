@@ -81,6 +81,7 @@ export default {
         })
         .then(docRef => this.$router.push("/university"))
         .catch(error => console.log(err));
+		alert("資料創建成功！")
     }
   }
 }
