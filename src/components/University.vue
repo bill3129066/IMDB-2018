@@ -6,7 +6,7 @@
 	<div class="index container">
       <div class="card" v-for="university in universities" :key="university.id">
 		
-		<router-link class="secondary-content" v-bind:to="{name:'university_view', params:{U_ID: university_U_ID}}" >
+		<router-link class="secondary-content" v-bind:to="{name:'university_view', params:{U_ID: university.U_ID}}" >
 		
         <div class="card-content">
           <i class="material-icons delete" @click="deleteSmoothie(university.id)">delete</i>
