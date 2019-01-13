@@ -3,6 +3,7 @@
     <nav class="nav-extended indigo darken-2 z-depth-3">
       <div class="nav-content">
         <router-link to="/">
+            <img src="https://i.imgur.com/sML0vtb.png" height="30" alt>
           <span class="nav-title">新世代大學索引</span>
         </router-link>
         <div class="input-field col s6 s12 red-text">
