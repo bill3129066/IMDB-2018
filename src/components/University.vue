@@ -9,13 +9,8 @@
 		<router-link class="secondary-content" v-bind:to="{name:'university_view', params:{U_ID: university.U_ID}}" >
 		
         <div class="card-content">
-          <i class="material-icons delete" @click="deleteSmoothie(university.id)">delete</i>
+          <!-- <i class="material-icons delete" @click="deleteSmoothie(university.id)">delete</i> -->
           <h2 class="indego-text">{{ university.U_Name }}</h2>
-          <!--<ul class="ingredients">
-            <li v-for="(ing, index) in smoothie.ingredients" :key="index">
-              <span class="chip">{{ ing }}</span>
-            </li>
-          </ul>-->
         </div>
 	   </router-link>
       </div>

@@ -2,7 +2,7 @@
   <div id="university_new">
     <h3>新增大學資料</h3>
 	<div class="row">
-	  <form @submit.prevent="saveUniversity" class="col s12">
+	  <form @submit.prevent="addUniversity" class="col s12">
 	    <div class="row">
 		  <div class="input-field col s12">
 		    <input type="text" v-model="U_ID" required>
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import db from "@/firebase/init";
+import db from "@/firebase/init"
 export default {
   name: 'university_new',
   data() {
@@ -68,7 +68,7 @@ export default {
     };
   },
   method: {
-    saveUniversity(){
+    addUniversity(){
 	  db.collection('University').add({
 	    U_ID: this.U_ID,
 	    U_Name: this.U_Name,
