@@ -1,15 +1,7 @@
 <template>
 
   <div id="university">
-    <ul class="collection with-header">
-	  <li
-	  class="collection-header"><h4>University</h4></li>
-	  <li v-for="university in universities" 
-	  v-bind:key="university.id" 
-	  class="collection-item">
-	    {{university.U_ID}}:{{university.U_Name}}
-	  </li>
-	</ul>
+    <h3>University</h3>
 	
 	<div class="index container">
       <div class="card" v-for="university in universities" :key="university.id">
@@ -51,7 +43,8 @@ export default {
 		  const data = {
 		    'id': doc.id,
 		    'U_ID': doc.data().U_ID,
-			'U_Name': doc.data().U_Name
+			'U_Name': doc.data().U_Name,
+			'U_Abstract': doc.data().U_Abstract
 		  }
 		  this.universities.push(data)
         });

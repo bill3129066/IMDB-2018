@@ -1,14 +1,52 @@
 <template>
   <div id="university_new">
-    <ul class="collection with-header">
-	  <li
-	  class="collection-header"><h4>Create a new university</h4></li>
-	  <li v-for="university in universities" 
-	  v-bind:key="university.id" 
-	  class="collection-item">
-	    {{university.U_ID}}:{{university.U_Name}}
-	  </li>
-	</ul>
+    <h3>Create a new university</h3>
+	<div class="row">
+	  <form @submit.prevent="saveUniversity" class="col s12">
+	    <div class="row">
+		  <div class="input-field col s12">
+		    <input type="text" v-model="U_ID" required>
+			<label>University ID#</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="input-field col s12">
+		    <input type="text" v-model="U_ID" required>
+			<label>University ID#</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="input-field col s12">
+		    <input type="text" v-model="U_ID" required>
+			<label>University ID#</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="input-field col s12">
+		    <input type="text" v-model="U_ID" required>
+			<label>University ID#</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="input-field col s12">
+		    <input type="text" v-model="U_ID" required>
+			<label>University ID#</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="input-field col s12">
+		    <input type="text" v-model="U_ID" required>
+			<label>University ID#</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="input-field col s12">
+		    <input type="text" v-model="U_ID" required>
+			<label>University ID#</label>
+		  </div>
+		</div>
+	  </form>
+	</div>
   </div>
 </template>
 
