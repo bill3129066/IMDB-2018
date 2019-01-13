@@ -1,6 +1,6 @@
 <template>
   <div class="index container">
-    <div class="card" v-for="smoothie in smoothies" :key="smoothie.id">
+    <!-- <div class="card" v-for="smoothie in smoothies" :key="smoothie.id">
       <div class="card-content">
         <i class="material-icons delete" @click="deleteSmoothie(smoothie.id)">delete</i>
         <h2 class="indego-text">{{ smoothie.title }}</h2>
@@ -9,6 +9,40 @@
             <span class="chip">{{ ing }}</span>
           </li>
         </ul>
+      </div>
+    </div>-->
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-2">
+        <img
+          alt="Logo"
+          class="img-fluid mx-auto d-block mb-3 mb-md-0"
+          src="https://bootstrap-vue.js.org/_nuxt/img/icon.f0a8c9e.png"
+        >
+      </div>
+      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+        <h1 class="mb-3">Bootstrap + Vue</h1>
+        <p
+          class="lead"
+         
+        >Build responsive, mobile-first projects on the web using Vue.js and the world's most popular front-end CSS library — Bootstrap V4.</p>
+        <p class="lead mb-3">
+          <span class="bd-text-purple-bright">Bootstrap-Vue</span> provides one of the most comprehensive implementations
+          of
+          <span class="bd-text-purple-bright">Bootstrap V4</span> components and grid system available for Vue.js 2.4+,
+          complete with extensive and automated WAI-ARIA accessibility markup.
+        </p>
+        <p class="mb-2 text-muted">
+          <a href="https://getbootstrap.com/docs/4.0">Bootstrap 4</a> is the world's most popular framework for building responsive, mobile-first sites.
+        </p>
+        <p class="mb-4 text-muted">
+          <a href="https://vuejs.org">Vue.js</a> (pronounced /vjuË, like view) is a progressive framework for building user interfaces.
+        </p>
+        <div class="d-flex flex-column flex-md-row lead mb-3">
+          <a href="/docs" class="btn mb-3 mb-md-0 mr-md-3 btn-bd-primary btn-lg" target="_self">Get started</a>
+          <a
+            href="https://github.com/bill3129066/IMDB-2018" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener"
+          >Github</a>
+        </div>
       </div>
     </div>
   </div>
