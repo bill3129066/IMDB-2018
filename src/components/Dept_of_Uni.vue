@@ -2,9 +2,18 @@
 
   <div id="dept_of_uni">
     <h3>大學科系</h3>
-	
+    <div class="input-field col s6 s12 red-text">
+      <i class="red-text material-icons prefix">search</i>
+      <input
+        type="text"
+        v-model="search"
+        placeholder="search school"
+        id="autocomplete-input"
+        class="autocomplete red-text"
+      >
+    </div>
 	<div class="index container">
-      <div class="card" v-for="dept_of_uni in dept_of_unis" :key="dept_of_uni.id">
+      <div class="card" v-for="dept_of_uni in filteredDoUs" :key="dept_of_uni.id">
 		
 		<router-link v-bind:to="{name:'dept_of_uni_view', params:{DU_Name: dept_of_uni.DU_Name}}" >
 		
@@ -31,7 +40,8 @@ export default {
   name: 'dept_of_uni',
   data() {
     return {
-      dept_of_unis: []
+      dept_of_unis: [],
+      search: ""
     };
   },
   created() {
@@ -53,6 +63,13 @@ export default {
 		  this.dept_of_unis.push(data)
         });
       });
+  },
+  computed: {
+    filteredDoUs: function() {
+      return this.dept_of_unis.filter(dept_of_uni => {
+        return dept_of_uni.DU_Name.match(this.search);
+      });
+    }
   }
 };
 </script>

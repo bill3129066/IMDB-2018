@@ -6,7 +6,7 @@
             <img src="./assets/logo.png" height="30" alt>
           <span class="nav-title">新世代大學索引</span>
         </router-link>
-        <div class="input-field col s6 s12 red-text">
+        <!-- <div class="input-field col s6 s12 red-text">
           <i class="red-text material-icons prefix">search</i>
           <input
             type="text"
@@ -14,7 +14,7 @@
             id="autocomplete-input"
             class="autocomplete red-text"
           >
-        </div>
+        </div> -->
         <!-- add button -->
         <!-- <a href class="btn-floating btn-large halfway-fab pink">
           <router-link to>

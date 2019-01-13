@@ -1,12 +1,19 @@
 <template>
   <div id="university">
     <h3>大學</h3>
+    <div class="input-field col s6 s12 red-text">
+      <i class="red-text material-icons prefix">search</i>
+      <input
+        type="text"
+        v-model="search"
+        placeholder="search school"
+        id="autocomplete-input"
+        class="autocomplete red-text"
+      >
+    </div>
     <div class="index container">
-      <div class="card" v-for="university in universities" :key="university.id">
-        <router-link
-
-          v-bind:to="{name:'university_view', params:{U_ID: university.U_ID}}"
-        >
+      <div class="card" v-for="university in filteredSchools" :key="university.id">
+        <router-link v-bind:to="{name:'university_view', params:{U_ID: university.U_ID}}">
           <div class="card-content">
             <!-- <i class="material-icons delete" @click="deleteSmoothie(university.id)">delete</i> -->
             <h2 class="indego-text">{{ university.U_Name }}</h2>
@@ -29,7 +36,8 @@ export default {
   name: "university",
   data() {
     return {
-      universities: []
+      universities: [],
+      search: ""
     };
   },
   created() {
@@ -39,18 +47,25 @@ export default {
       .then(snapshot => {
         snapshot.forEach(doc => {
           const data = {
-            'id': doc.id,
-            'U_ID': doc.data().U_ID,
-            'U_Name': doc.data().U_Name,
-            'U_Abstract': doc.data().U_Abstract,
-            'Tuition': doc.data().Tuition,
-            'Dorm_Fee': doc.data().Dorm_Fee,
-            'Rent_Fee': doc.data().Rent_Fee,
-            'Location': doc.data().Location
+            id: doc.id,
+            U_ID: doc.data().U_ID,
+            U_Name: doc.data().U_Name,
+            U_Abstract: doc.data().U_Abstract,
+            Tuition: doc.data().Tuition,
+            Dorm_Fee: doc.data().Dorm_Fee,
+            Rent_Fee: doc.data().Rent_Fee,
+            Location: doc.data().Location
           };
           this.universities.push(data);
         });
       });
+  },
+  computed: {
+    filteredSchools: function() {
+      return this.universities.filter(university => {
+        return university.U_Name.match(this.search);
+      });
+    }
   }
 };
 </script>
@@ -72,6 +87,4 @@ export default {
 .index li {
   display: inline-block;
 }
-
-
 </style>
