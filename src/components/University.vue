@@ -5,6 +5,9 @@
 	
 	<div class="index container">
       <div class="card" v-for="university in universities" :key="university.id">
+		
+		<router-link class="secondary-content" v-bind:to="{name:'university_view', params:{U_ID: university_U_ID}}" >
+		
         <div class="card-content">
           <i class="material-icons delete" @click="deleteSmoothie(university.id)">delete</i>
           <h2 class="indego-text">{{ university.U_Name }}</h2>
@@ -14,8 +17,10 @@
             </li>
           </ul>-->
         </div>
+	   </router-link>
       </div>
-    </div>
+	</div>
+	
 	
 	<div class="fixed-action-btn">
 	  <router-link to="/university/new" class="btn-floating btn-large red">
