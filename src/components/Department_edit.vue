@@ -5,7 +5,7 @@
       <form v-on:submit.prevent="editDepartment" class="col s12">
         <div class="row">
           <div class="input-field col s12">
-            <input disabled type="text" v-model="U_ID" required>
+            <input disabled type="text" v-model="D_ID" required>
             <label class="active">科系ID# (Slug) (此為主要鍵，無法更改)</label>
           </div>
         </div>
