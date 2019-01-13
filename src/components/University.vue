@@ -1,4 +1,5 @@
 <template>
+
   <div id="university">
     <ul class="collection with-header">
 	  <li
@@ -10,9 +11,23 @@
 	  </li>
 	</ul>
 	
+	<div class="index container">
+      <div class="card" v-for="university in universities" :key="university.id">
+        <div class="card-content">
+          <i class="material-icons delete" @click="deleteSmoothie(university.id)">delete</i>
+          <h2 class="indego-text">{{ university.U_Name }}</h2>
+          <!--<ul class="ingredients">
+            <li v-for="(ing, index) in smoothie.ingredients" :key="index">
+              <span class="chip">{{ ing }}</span>
+            </li>
+          </ul>-->
+        </div>
+      </div>
+    </div>
+	
 	<div class="fixed-action-btn">
 	  <router-link to="/university/new" class="btn-floating btn-large red">
-	    <i class="fa fa-plus"></i>
+	    <i class="material-icons">add</i>
 	  </router-link>
 	</div>
   </div>
@@ -44,3 +59,31 @@ export default {
   }
 };
 </script>
+
+<style>
+.index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 60px;
+}
+
+.index h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.index .ingredients li {
+  display: inline-block;
+}
+
+.index .delete {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 1.4em;
+}
+</style>
