@@ -6,7 +6,7 @@
 	<div class="index container">
       <div class="card" v-for="dept_of_uni in dept_of_unis" :key="dept_of_uni.id">
 		
-		<router-link class="secondary-content" v-bind:to="{name:'dept_of_uni_view', params:{DU_Name: dept_of_uni.DU_Name}}" >
+		<router-link v-bind:to="{name:'dept_of_uni_view', params:{DU_Name: dept_of_uni.DU_Name}}" >
 		
         <div class="card-content">
           <!-- <i class="material-icons delete" @click="deleteSmoothie(university.id)">delete</i> -->
@@ -71,11 +71,11 @@ export default {
   margin-top: 0px;
 }
 
-.index .ingredients li {
+.index li {
   display: inline-block;
 }
 
-.index .delete {
+.index {
   position: absolute;
   top: 4px;
   right: 4px;
