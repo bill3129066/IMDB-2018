@@ -5,6 +5,7 @@ import University from '@/components/University'
 import University_new from '@/components/University_new'
 import University_view from '@/components/University_view'
 import Department from '@/components/Department'
+import Department_new from '@/components/Department_new'
 import Department_view from '@/components/Department_view'
 
 Vue.use(Router)
@@ -35,6 +36,11 @@ export default new Router({
       path: '/department',
       name: 'department',
       component: Department
+    },
+	{
+      path: '/department/new',
+      name: 'department_new',
+      component: Department_new
     },
 	{
       path: '/department/:D_ID',
