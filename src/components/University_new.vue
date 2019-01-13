@@ -1,20 +1,14 @@
 <template>
-  <div id="university">
+  <div id="university_new">
     <ul class="collection with-header">
 	  <li
-	  class="collection-header"><h4>University</h4></li>
+	  class="collection-header"><h4>Create a new university</h4></li>
 	  <li v-for="university in universities" 
 	  v-bind:key="university.id" 
 	  class="collection-item">
 	    {{university.U_ID}}:{{university.U_Name}}
 	  </li>
 	</ul>
-	
-	<div class="fixed-action-btn">
-	  <router-link to="/university/new" class="btn-floating btn-large red">
-	    <i class="fa fa-plus"></i>
-	  </router-link>
-	</div>
   </div>
 </template>
 
