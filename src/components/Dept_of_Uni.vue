@@ -45,7 +45,7 @@ export default {
 		    'U_ID': doc.data().U_ID,
 			'D_ID': doc.data().D_ID,
 			'DU_Name': doc.data().DU_Name,
-			'Score_GAST': doc.data().Score_GAST,
+			'Score_GSAT': doc.data().Score_GSAT,
 			'Score_JCEE': doc.data().Score_JCEE,
 			'Feature': doc.data().Feature,
 			'Start_Date': doc.data().Start_Date

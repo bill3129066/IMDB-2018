@@ -4,7 +4,7 @@
 	  <li class="collection-header"><h4>{{DU_Name}}</h4></li>
 	  <li class="collection-item">University ID#: {{U_ID}}</li>
 	  <li class="collection-item">Department ID#: {{D_ID}}</li>
-	  <li class="collection-item">Score of GAST: {{Score_GAST}}</li>
+	  <li class="collection-item">Score of GSAT: {{Score_GSAT}}</li>
 	  <li class="collection-item">Score of JCEE: {{Score_JCEE}}</li>
 	  <li class="collection-item">Feature: {{Feature}}</li>
 	  <li class="collection-item">Start Date: {{Start_Date}}</li>
@@ -29,7 +29,7 @@ export default {
 	  U_ID: null,
 	  D_ID: null,
 	  DU_Name: null,
-	  Score_GAST: null,
+	  Score_GSAT: null,
 	  Score_JCEE: null,
 	  Feature: null,
 	  Start_Date: null
@@ -43,7 +43,7 @@ export default {
 		  vu.U_ID = doc.data().U_ID,
 		  vu.D_ID = doc.data().D_ID,
 		  vu.DU_Name = doc.data().DU_Name,
-		  vu.Score_GAST = doc.data().Score_GAST,
+		  vu.Score_GSAT = doc.data().Score_GSAT,
 		  vu.Score_JCEE = doc.data().Score_JCEE,
 		  vu.Feature = doc.data().Feature,
 		  vu.Start_Date = doc.data().Start_Date
@@ -62,7 +62,7 @@ export default {
 			this.U_ID = doc.data().U_ID,
 			this.D_ID = doc.data().D_ID,
 			this.DU_Name = doc.data().DU_Name,
-			this.Score_GAST = doc.data().Score_GAST,
+			this.Score_GSAT = doc.data().Score_GSAT,
 			this.Score_JCEE = doc.data().Score_JCEE,
 			this.Feature = doc.data().Feature,
 			this.Start_Date = doc.data().Start_Date
