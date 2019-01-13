@@ -9,7 +9,8 @@
 	  <li class="collection-item">Fee of Renting around University: ${{Rent_Fee}}</li>
 	  <li class="collection-item">University Location: {{Location}}</li>
 	</ul>
-	<router-link to="/University" class="btn grey">Back</router-link>
+	<router-link to="/university" class="btn grey">Back</router-link>
+	<button @click="deleteUniversity()" class="btn red">Delete</button>
   </div>
 </template>
 
@@ -61,6 +62,17 @@ export default {
 			this.Location = doc.data().Location
 		  })
 	    })
+	},
+	deleteUniversity (){
+	  if (confirm('Are you sure?')){
+	    db.collection('University').where('U_ID', '==', this.$route.params.U_ID).get()
+		.then(snapshot => {
+		  snapshot.forEach(doc => {
+		    doc.ref.delete()
+			this.$route.push('/university')
+		  })
+	    })
+	  }
 	}
   }
 }
