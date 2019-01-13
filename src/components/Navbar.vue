@@ -3,8 +3,13 @@
     <nav class="nav-extended indigo darken-2 z-depth-3">
       <div class="nav-content">
         <router-link to="/">
-          <span class="nav-title">Database</span>
+          <span class="nav-title">新世代大學索引</span>
         </router-link>
+          <div class="input-field col s6 s12 red-text">
+            <i class="red-text material-icons prefix">search</i>
+            <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete red-text">
+          </div>
+        <!-- add button -->
         <!-- <a href class="btn-floating btn-large halfway-fab pink">
           <router-link to>
             <i class="material-icons">add</i>
