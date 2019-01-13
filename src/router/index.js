@@ -4,6 +4,7 @@ import Index from '@/components/Index'
 import University from '@/components/University'
 import University_new from '@/components/University_new'
 import University_view from '@/components/University_view'
+import University_edit from '@/components/University_edit'
 import Department from '@/components/Department'
 import Department_new from '@/components/Department_new'
 import Department_view from '@/components/Department_view'
@@ -31,6 +32,11 @@ export default new Router({
       path: '/university/:U_ID',
       name: 'university_view',
       component: University_view
+    },
+	{
+      path: '/university/edit/:U_ID',
+      name: 'university_edit',
+      component: University_edit
     },
 	{
       path: '/department',
