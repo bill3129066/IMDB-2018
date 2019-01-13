@@ -9,6 +9,7 @@ import Department from '@/components/Department'
 import Department_new from '@/components/Department_new'
 import Department_view from '@/components/Department_view'
 import Dept_of_Uni from '@/components/Dept_of_Uni'
+import Dept_of_Uni_new from '@/components/Dept_of_Uni_new'
 import Dept_of_Uni_view from '@/components/Dept_of_Uni_view'
 
 Vue.use(Router)
@@ -59,6 +60,11 @@ export default new Router({
       path: '/dept_of_uni',
       name: 'dept_of_uni',
       component: Dept_of_Uni
+    },
+	{
+      path: '/dept_of_uni/new',
+      name: 'dept_of_uni_new',
+      component: Dept_of_Uni_new
     },
 	{
       path: '/dept_of_uni/:DU_Name',
