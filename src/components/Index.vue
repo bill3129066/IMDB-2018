@@ -13,36 +13,25 @@
     </div>-->
     <div class="row align-items-center">
       <div class="col-6 mx-auto col-md-6 order-md-2">
-        <img
+		<p><img
           alt="Logo"
           class="img-fluid mx-auto d-block mb-3 mb-md-0"
-          src="https://bootstrap-vue.js.org/_nuxt/img/icon.f0a8c9e.png"
-        >
+          src="https://www.ntu.edu.tw/images/inner/emblem_1.png"
+		  align="left"
+        >做出我們應盡的心力。大學是人生中至關重要的一個選擇，它深深影響了大多數人的人生軌跡，小至大學生涯的生活環境、大至未來後半</p>
       </div>
-      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-        <h1 class="mb-3">Bootstrap + Vue</h1>
+      <div class="col-md-6 order-md-1 text-left text-md-left pr-md-5">
+        <h1 class="mb-3">新世代大學科系資訊系統</h1>
         <p
           class="lead"
          
-        >Build responsive, mobile-first projects on the web using Vue.js and the world's most popular front-end CSS library — Bootstrap V4.</p>
+        >大學是人生中至關重要的一個選擇，它深深影響了大多數人的人生軌跡，小至大學生涯的生活環境、大至未來後半生的工作都有可能因為我們在 18 歲時的那個選擇而有著大大的不同。</p>
         <p class="lead mb-3">
-          <span class="bd-text-purple-bright">Bootstrap-Vue</span> provides one of the most comprehensive implementations
-          of
-          <span class="bd-text-purple-bright">Bootstrap V4</span> components and grid system available for Vue.js 2.4+,
-          complete with extensive and automated WAI-ARIA accessibility markup.
+          但一件這麼重要的事情卻常常不受到重視，導致高中生最終最初了一個讓自己後悔的決定，而我們在看到了許多沈重的例子後決定站出來，改變這個現狀。
         </p>
         <p class="mb-2 text-muted">
-          <a href="https://getbootstrap.com/docs/4.0">Bootstrap 4</a> is the world's most popular framework for building responsive, mobile-first sites.
+          <a href="https://getbootstrap.com/docs/4.0">新世代大學索引</a> is the world's most popular framework for searching university and its relatives' sites.
         </p>
-        <p class="mb-4 text-muted">
-          <a href="https://vuejs.org">Vue.js</a> (pronounced /vjuË, like view) is a progressive framework for building user interfaces.
-        </p>
-        <div class="d-flex flex-column flex-md-row lead mb-3">
-          <a href="/docs" class="btn mb-3 mb-md-0 mr-md-3 btn-bd-primary btn-lg" target="_self">Get started</a>
-          <a
-            href="https://github.com/bill3129066/IMDB-2018" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener"
-          >Github</a>
-        </div>
       </div>
     </div>
   </div>
