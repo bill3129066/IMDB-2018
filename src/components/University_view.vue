@@ -1,6 +1,15 @@
 <template>
   <div id="university_view">
-    <h3>View</h3>
+    <ul class="colloction with-header">
+	  <li class="collection-header"><h4>{{U_Name}}</h4></li>
+	  <li class="collection-item">University ID#: {{U_ID}}</li>
+	  <li class="collection-item">University Abstract: {{U_Abstract}}</li>
+	  <li class="collection-item">University Tuition: ${{Tuition}}</li>
+	  <li class="collection-item">Fee of University's Dorm: ${{Dorm_Fee}}</li>
+	  <li class="collection-item">Fee of Renting around University: ${{Rent_Fee}}</li>
+	  <li class="collection-item">University Location: {{Location}}</li>
+	</ul>
+	<router-link to="/University" class="btn grey">Back</router-link>
   </div>
 </template>
 
