@@ -54,7 +54,7 @@ export default {
   watch: {
     '$route': 'fetchData'
   },
-  method: {
+  methods: {
     fetchData (){
 	  db.collection('University').where('U_ID', '==', this.$route.params.U_ID).get()
 		.then(snapshot => {
